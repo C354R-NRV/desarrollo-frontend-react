@@ -7,7 +7,7 @@ const Github = () => {
             target="_blank"
             rel="noopener noreferrer"
             >
-            Mi proyecto React -> Github
+            Mi proyecto React - Github
             </a>
         </div>
     );
