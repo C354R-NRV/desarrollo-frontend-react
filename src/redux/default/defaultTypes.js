@@ -1,0 +1,2 @@
+export const SET_NAME_MODULE = 'SET NAME MODULE';
+export const CLEAN_NAME_MODULE = 'CLEAN NAME MODULE';
