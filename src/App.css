@@ -17,11 +17,34 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.CatalogoProducto-header table tr td {
+  border :1px solid #4f725c;
+}
+.CatalogoProducto-header table thead th {
+  border :1px solid #8ac09d;
+}
+.CatalogoProducto-header table{
+  width: 100%;
+}
+.CatalogoProducto-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.categoriaRow{
+  background-color: #101e19;
+  color: #6b9a7c;
 }
 
 .App-link {

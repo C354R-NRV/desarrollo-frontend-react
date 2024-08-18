@@ -1,11 +1,12 @@
 
 import './App.css'; 
-import Default from './screens/Default';
+/* import Default from './screens/Default'; */
+import CatalogoProducto from './screens/CatalogoProducto';
 
 function App() {
   return (
     <div className="App">
-      <Default/>
+      <CatalogoProducto/>
     </div>
   );
 }

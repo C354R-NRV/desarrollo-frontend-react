@@ -2,7 +2,8 @@ import { SET_NAME_MODULE } from './defaultTypes'
 
 //definiendo/declarando las variables globales
 const initialState = {
-    name : 'Desarrollo Front end con React',
+    name : 'Desarrollo Frontend con React',
+    
 };
 
 const defaultReducer = (state =  initialState, action) => {
@@ -18,4 +19,5 @@ const defaultReducer = (state =  initialState, action) => {
             return state;
     }
 };
+
 export default defaultReducer;
