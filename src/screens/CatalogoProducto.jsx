@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'; 
 import { useSelector, useDispatch } from "react-redux"; 
 import SearchBar from '../components/SearchBar';   
-import ProductTable from './Product/ProductTable';
+import ProductTable from './Product/_components/ProductTable';
 import { setProducts } from '../redux/Product/productActions';
 
 const CatalogoProducto = () => {
