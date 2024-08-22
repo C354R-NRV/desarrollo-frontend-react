@@ -5,6 +5,8 @@ import LoginForms from '../screens/Forms/LoginForm.jsx'
 
 import App from "../App";
 
+const basename = process.env.NODE_ENV === 'production' ? '/desarrollo-frontend-react':'/';
+
 const routes = createBrowserRouter([
 {
     path: '/',
@@ -24,5 +26,7 @@ const routes = createBrowserRouter([
         },
     ]
 }
-]);
+], {
+    basename: basename
+});
 export default routes;
