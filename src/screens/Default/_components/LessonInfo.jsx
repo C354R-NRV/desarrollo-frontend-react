@@ -1,7 +1,7 @@
 const LessonInfo = ({numero, texto}) => {
     return(
         <>
-        <div><span>{numero}</span>:<span>{texto}</span></div>
+            <span>{numero} : {texto}</span> 
         </>
     );
 };

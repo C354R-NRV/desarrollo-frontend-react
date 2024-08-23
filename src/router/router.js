@@ -4,6 +4,7 @@ import CatalogoProducto from '../screens/CatalogoProducto'
 import LoginForms from '../screens/Forms/LoginForm.jsx'
 
 import App from "../App";
+import LandingPage from '../screens/LandingPage.jsx';
 
 const basename = process.env.NODE_ENV === 'production' ? '/desarrollo-frontend-react':'/';
 
@@ -12,6 +13,10 @@ const routes = createBrowserRouter([
     path: '/',
     element: <App/>,
     children: [
+        {
+            path: '/',
+            element: <LandingPage/>,
+        },
         {
             path: '/default',
             element: <Default/>,

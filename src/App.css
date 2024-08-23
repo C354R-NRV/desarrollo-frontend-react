@@ -35,10 +35,28 @@
 .CatalogoProducto-header {
   background-color: #282c34;
   min-height: 100vh;
+  max-width: 100%; 
+  flex-direction: column;  
+  padding-top: 2rem;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.CatalogoProducto-header div{ 
+  width: 100%;   
+  text-align: center;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+.CatalogoProducto-header div table{ 
+  width: 50%;   
+}
+.headerGral {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column; 
-  align-items: center;
-  justify-content: center;
+ /*  align-items: center;  */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -60,8 +78,9 @@
   }
 }
 
+/* styles NAVBAR */
 
-nav {
+/* nav {
   background-color: #333;
   padding: 1rem;
 }
@@ -86,4 +105,206 @@ a {
 
 a:hover {
   color: #ffcc00;
+} */
+ 
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 2rem;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-item a:hover {
+  color: #ffcc00;
+}
+
+.nav-right {
+  color: white;
+}
+
+/* style forms */
+.container {
+  display: flex;
+  
+  align-items: center;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  color: #282c34;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: #101e19;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form h5 {
+  text-align: center;
+}
+form div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding-right: 10px;
+}
+
+form div label {
+  width: 100px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+form div input {
+  flex: 1;
+  min-width: 200px;
+  width: calc(100% - 120px);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  padding: 8px 40px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.toggle-password {
+  background-color: #002701;
+  border: 1px #101e19;
+  font-size: 0.9rem; 
+  color: #f3f9ff;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 0.3rem;
+}
+
+.toggle-password:hover {
+  color: #beff88;
+}
+
+.btn-logout {
+  background-color: #3e0000;
+  border: 1px #1e1010;
+  font-size: 0.9rem;
+  color: #fff3f3;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 0.3rem;
+}
+
+.btn-logout:hover {
+  color: #ffb0b0; 
+}
+
+
+/* style forms */
+
+/* stlye modales*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.notification-success {
+  background-color: #efbdbd;
+  color: #cc6459;
+  padding: 2rem;
+  border: 1px solid #e44545;
+  border-radius: 0.5rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+.close-btn-success {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #7e4f1a;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* stlye modales*/
+
+/* style LandingPage*/
+
+.containerLandingPage {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.headerLandingPage {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.titleLandingPage {
+  margin: 0;
+}
+
+.welcome-sectionLandingPage, .topics-sectionLandingPage, .resources-sectionLandingPage {
+  margin-top: 20px;
+  padding: 15px;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.topic-listLandingPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.footerLandingPage {
+  margin-top: 20px;
+  text-align: center;
+  color: #777;
+}
+.justifyLandingPage {
+  text-align: justify;
+}
+
+/* style LandingPage*/

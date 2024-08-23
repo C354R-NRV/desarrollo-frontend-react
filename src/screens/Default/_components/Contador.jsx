@@ -32,9 +32,9 @@ const Contador = () => {
         <>
             <h4>Componente Contador</h4>
             <h3>{contador}</h3>
-            <div>
-            <button onClick={handleContador2}>Disminuir</button> | <button onClick={handleContador}>Aumentar</button>
-            </div>
+            <section>
+                <button onClick={handleContador2}>Disminuir</button>  - <button onClick={handleContador}>Aumentar</button>
+            </section>
         </>
     );
 };

@@ -11,10 +11,10 @@ const SearchBar = ({filterText,
             onChange={(e) => onFilterTextChange(e.target.value)}
         /><br/>
         <label>
-        <input
-            type="checkbox"
-            checked={inStockOnly}
-            onChange={(e) => onInStockOnlyChange(e.target.checked)}/>
+            <input
+                type="checkbox"
+                checked={inStockOnly}
+                onChange={(e) => onInStockOnlyChange(e.target.checked)}/>
             {' '}Mostrar solo productos en stock
             </label>
         </form>

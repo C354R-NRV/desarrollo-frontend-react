@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import SearchBar from '../components/SearchBar';   
 import ProductTable from './Product/_components/ProductTable';
 import { setProducts } from '../redux/Product/productActions';
+import { motion } from 'framer-motion';
 
 const CatalogoProducto = () => {
     const product = useSelector(state => state.product); 
@@ -29,21 +30,26 @@ const CatalogoProducto = () => {
     const [inStockOnly, setInStockOnly] = useState(false);
 
     return ( 
-        <>
-            <header className="CatalogoProducto-header">
-                <div>
-                    <SearchBar 
-                    filterText={filterText} 
-                    inStockOnly={inStockOnly} 
-                    onFilterTextChange={setFilterText} 
-                    onInStockOnlyChange={setInStockOnly}
-                    />
-                    <ProductTable products={product.PRODUCTS} 
-                    filterText={filterText}
-                    inStockOnly={inStockOnly}/>
-                </div> 
-            </header>
-        </> 
+        
+        <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        >
+        <div className="CatalogoProducto-header">
+            <SearchBar 
+            filterText={filterText} 
+            inStockOnly={inStockOnly} 
+            onFilterTextChange={setFilterText} 
+            onInStockOnlyChange={setInStockOnly}
+            />
+            <div>
+            <ProductTable products={product.PRODUCTS} 
+            filterText={filterText}
+            inStockOnly={inStockOnly}/>
+            </div>
+        </div>   
+        </motion.div>
     );
 
 };
